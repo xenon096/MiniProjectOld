@@ -1,0 +1,118 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style10 {color: #FFFF00; font-weight: bold; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div>
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">View Healthcare Threat Prediction Type Details  !!! </p>
+                            <hr>
+                            <div class="tweettext">
+                               <table border="5" bordercolor="#FF00FF">
+                               <tr>
+
+                                   <td bgcolor="#FF0000"><span class="style8 style6">SV_TAXONOMY</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">TAXONOMY_NAME</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">RG_REFERENCE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">SV_REFERENCE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">SV_NAME</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">SV_DESCRIPTION</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">SL_REFERENCE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">LC_REFERENCE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">PHONE_NUMBER</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">WEBSITE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">EMAIL_ADDRESS</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">WHEELCHAIR_ACCESSIBLE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">STREET_NUMBER</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">CITY</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">LATITUDE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">LONGITUDE</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">LINK_811</span></td>
+<td bgcolor="#FF0000"><span class="style8 style6">Prediction</span></td>
+
+
+                      </tr>
+                            {% for object in list_objects %}
+                      <tr>
+
+                           <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.SV_TAXONOMY}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.TAXONOMY_NAME}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.RG_REFERENCE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.SV_REFERENCE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.SV_NAME}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><textarea cols="20" rows="5">{{object.SV_DESCRIPTION}}</textarea></td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.SL_REFERENCE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.LC_REFERENCE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.PHONE_NUMBER}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.WEBSITE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.EMAIL_ADDRESS}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.WHEELCHAIR_ACCESSIBLE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.STREET_NUMBER}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.CITY}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.LATITUDE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.LONGITUDE}}</td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><textarea cols="20" rows="5">{{object.LINK_811}}</textarea></td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" >{{object.Prediction}}</td>
+
+
+                        </tr>
+
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

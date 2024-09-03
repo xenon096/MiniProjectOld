@@ -1,0 +1,44 @@
+Modeling, Detecting, and Mitigating Threats Against Industrial Healthcare Systems A Combined Software Defined Networking and Reinforcement Learning Approach
+
+
+IEEE Transactions on Industrial Informatics,Volume:18,Issue:3,Issue Date:March.2022
+
+Cybersecurity, IEC 60 870-5-104, Internet of Medical Things (IoMT), intrusion detection, machine learning (ML), reinforcement learning (RL), software defined networking (SDN).
+
+
+Modeling_Detecting_and_Mitigating_Threats
+
+
+
+modeling_detecting_and_mitigating_threats
+
+
+
+detection_type
+
+
+SV_TAXONOMY
+TAXONOMY_NAME
+RG_REFERENCE
+SV_REFERENCE
+SV_NAME
+SV_DESCRIPTION
+SL_REFERENCE
+LC_REFERENCE
+PHONE_NUMBER
+WEBSITE
+EMAIL_ADDRESS
+WHEELCHAIR_ACCESSIBLE
+STREET_NUMBER
+CITY
+LATITUDE
+LONGITUDE
+LINK_811
+Prediction
+
+
+
+
+
+
+
